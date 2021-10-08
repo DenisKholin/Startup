@@ -1,0 +1,110 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.testimonials {
+	background-color: $about-bgcolor;
+	color: $main-color;
+
+	&__content {
+		max-width: 114rem;
+		margin: 0 auto;
+		padding: 10rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media screen and (max-width: $big-size) {
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+	}
+
+	&__sponsor-box {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 12rem;
+		margin-bottom: 7rem;
+
+		@media screen and (max-width: $big-size) {
+			flex-direction: column;
+		}
+	}
+
+	&__sponsor {
+		@media screen and (max-width: $big-size) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__text {
+		max-width: 76rem;
+		font-size: 1.6rem;
+		font-family: Roboto Slab;
+		font-style: italic;
+		font-weight: 400;
+		// margin-bottom: 4rem;
+		text-align: center;
+	}
+
+	&__author {
+		font-size: 1.6rem;
+		font-family: Roboto Slab;
+		font-style: normal;
+		font-weight: 700;
+		// margin-bottom: 4rem;
+		text-align: center;
+	}
+
+	&__wrapper {
+		width: 35rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	&__slider {
+		&_container {
+			overflow: hidden;
+			margin: 0 auto;
+			width: 28rem;
+		}
+
+		&_track {
+			display: flex;
+			justify-content: space-between;
+			transition: 0.2s;
+			width: 100%;
+		}
+
+		&_item {
+			min-width: 28rem;
+			height: 14rem;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+
+	button {
+		background: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		height: auto;
+
+		img {
+			transition: 0.2s;
+			width: 1.3rem;
+		}
+
+		&:hover {
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+}

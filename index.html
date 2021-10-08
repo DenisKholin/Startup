@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bundle.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+		rel="stylesheet">
+	<title>Startup</title>
+</head>
+
+<body>
+	<header class="header" id="header">
+		<div class="header__content">
+			<div class="header__nav ">
+				<div class="header__logo">Startup</div>
+				<ul class="header__main-nav">
+					<a href="#header" class="header__nav-link">
+						<li class="header__nav-item">Home</li>
+					</a>
+					<a href="#services" class="header__nav-link">
+						<li class="header__nav-item">Servies</li>
+					</a>
+					<a href="#about" class="header__nav-link">
+						<li class="header__nav-item">About</li>
+					</a>
+					<a href="#works" class="header__nav-link">
+						<li class="header__nav-item">Works</li>
+					</a>
+					<a href="#blog" class="header__nav-link">
+						<li class="header__nav-item">Blog</li>
+					</a>
+					<a href="#testimonials" class="header__nav-link">
+						<li class="header__nav-item">Clients</li>
+					</a>
+					<a href="#contact" class="header__nav-link">
+						<li class="header__nav-item">Contact</li>
+					</a>
+				</ul>
+			</div>
+
+			<div class="header__nav_sticky" id="sticky">
+				<div class="header__logo_sticky">Startup</div>
+				<ul class="header__main-nav_sticky">
+					<a href="#header" class="header__nav-link_sticky">
+						<li class="header__nav-item_sticky">Home</li>
+					</a>
+					<a href="#services" class="header__nav-link_sticky">
+						<li class="header__nav-item_sticky">Servies</li>
+					</a>
+					<a href="#about" class="header__nav-link_sticky">
+						<li class="header__nav-item_sticky">About</li>
+					</a>
+					<a href="#works" class="header__nav-link_sticky">
+						<li class="header__nav-item_sticky">Works</li>
+					</a>
+					<a href="#blog" class="header__nav-link_sticky">
+						<li class="header__nav-item_sticky">Blog</li>
+					</a>
+					<a href="#testimonials" class="header__nav-link_sticky">
+						<li class="header__nav-item_sticky">Clients</li>
+					</a>
+					<a href="#contact" class="header__nav-link_sticky">
+						<li class="header__nav-item_sticky">Contact</li>
+					</a>
+				</ul>
+			</div>
+
+			<img src="src/img/hamburger-icon-png-7.png" alt="" class="header__burger" id="header__burger"
+				onclick="PopUpShow()">
+			<div class="popup__nav">
+				<div class="popup__logo">Startup</div>
+				<ul class="popup__nav_main">
+					<a onclick="PopUpHide(200)" href="#header" class="popup__nav_link">
+						<li class="popup__nav_item">Home</li>
+					</a>
+					<a onclick="PopUpHide(200)" href="#services" class="popup__nav_link">
+						<li class="popup__nav_item">Servies</li>
+					</a>
+					<a onclick="PopUpHide(200)" href="#about" class="popup__nav_link">
+						<li class="popup__nav_item">About</li>
+					</a>
+					<a onclick="PopUpHide(200)" href="#works" class="popup__nav_link">
+						<li class="popup__nav_item">Works</li>
+					</a>
+					<a onclick="PopUpHide(200)" href="#blog" class="popup__nav_link">
+						<li class="popup__nav_item">Blog</li>
+					</a>
+					<a onclick="PopUpHide(200)" href="#testimonials" class="popup__nav_link">
+						<li class="popup__nav_item">Clients</li>
+					</a>
+					<a onclick="PopUpHide(200)" href="#contact" class="popup__nav_link">
+						<li class="popup__nav_item">Contact</li>
+					</a>
+				</ul>
+			</div>
+			<div class="header__title-box">
+				<h1 class="header__title">Welcome to startup</h1>
+				<p class="header__subtitle">Your Favourite Creaitve Agency Tempate</p>
+				<a href="" class="header__start-btn">Get started</a>
+			</div>
+		</div>
+	</header>
+	<div class="services" id="services">
+		<h2 class="services__title">Services</h2>
+		<h3 class="services__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing</h3>
+		<div class="services__block">
+			<div class="services__box">
+				<img src="src/img/typigraphy_icon.png" alt="" class="services__icon">
+				<h4 class="services__column-title">Clean Typography</h4>
+				<p class="services__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae iusto
+					laudantium iste optio facilis vel fugit dolorem veniam ipsa fuga!</p>
+			</div>
+			<div class="services__box">
+				<img src="src/img/code_icon.png" alt="" class="services__icon">
+				<h4 class="services__column-title">Rock Solid Code</h4>
+				<p class="services__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut expedita non
+					vitae repellat dolorem ipsa, architecto quidem! Sequi, veritatis.</p>
+			</div>
+			<div class="services__box">
+				<img src="src/img/support_icon.png" alt="" class="services__icon">
+				<h4 class="services__column-title">Expert Support</h4>
+				<p class="services__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos illum quidem
+					dolores voluptatibus nobis ipsa, harum atque eligendi rem unde.</p>
+			</div>
+		</div>
+	</div>
+	<div class="about" id="about">
+		<div class="about__content">
+			<h2 class="about__title">About us</h2>
+			<h3 class="about__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+			<div class="about__text-box">
+				<div class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat facilis dolorum
+					aut totam magnam nemo illum delectus, corporis nisi minima animi optio perspiciatis reiciendis quos modi
+					blanditiis aspernatur, molestiae repellat nobis officia cupiditate quidem rem nam facere. Ipsa eligendi
+					minus est reiciendis nesciunt sint. Placeat debitis possimus numquam aut aliquam.</div>
+				<div class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis facilis,
+					voluptatibus modi obcaecati mollitia, odit minus quia nisi cupiditate id aut, omnis labore est
+					consequatur quidem. Hic sint tenetur suscipit ipsa quo accusantium a, eius ea perspiciatis dicta sapiente
+					ullam explicabo nulla consequatur dolores nemo officiis aliquam quis consequuntur harum.</div>
+			</div>
+			<div class="about__slider">
+				<div class="about__slider-block">
+					<div class="about__slider-box">
+						<div class="about__img-box">
+							<img src="src/img/man-1.png" alt="" class="about__img">
+						</div>
+						<p class="about__name">Md. Khalil Uddin</p>
+						<p class="about__post">Head of Ideas</p>
+					</div>
+					<div class="about__slider-box">
+						<div class="about__img-box">
+							<img src="src/img/man-2.png" alt="" class="about__img">
+						</div>
+						<p class="about__name">Rubel Miah</p>
+						<p class="about__post">Lead WordPress Developer</p>
+					</div>
+				</div>
+				<div class="about__slider-block">
+					<div class="about__slider-box">
+						<div class="about__img-box">
+							<img src="src/img/man-3.png" alt="" class="about__img">
+						</div>
+						<p class="about__name">Shamim Mia</p>
+						<p class="about__post">Sr. Web Developer</p>
+					</div>
+					<div class="about__slider-box">
+						<div class="about__img-box">
+							<img src="src/img/man-4.png" alt="" class="about__img">
+						</div>
+						<p class="about__name">John Doe</p>
+						<p class="about__post">Front-end Developer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="works" id="works">
+		<h2 class="works__title">Latest Works</h2>
+		<ul class="works__nav">
+			<a href="" class="works__link">
+				<li class="works__item">All</li>
+			</a>
+			<a href="" class="works__link">
+				<li class="works__item">Branding</li>
+			</a>
+			<a href="" class="works__link">
+				<li class="works__item">Design</li>
+			</a>
+			<a href="" class="works__link">
+				<li class="works__item">Development</li>
+			</a>
+			<a href="" class="works__link">
+				<li class="works__item">Strategy</li>
+			</a>
+		</ul>
+		<div class="works__container">
+			<div class="works__box works__box-1">
+				<div class="works__box-content">
+					<p class="works__box-title">hair dresser</p>
+					<p class="works__box-category">Branding</p>
+					<a href="" class="works__button">
+						<span class="works__button-text">view</span>
+						<span class="works__button-icon"><img src="src/img/grid-arrow.png" alt=""></span>
+					</a>
+				</div>
+			</div>
+			<div class="works__box works__box-2">
+				<div class="works__box-content">
+					<p class="works__box-title">hair dresser</p>
+					<p class="works__box-category">Branding</p>
+					<a href="" class="works__button">
+						<span class="works__button-text">view</span>
+						<span class="works__button-icon"><img src="src/img/grid-arrow.png" alt=""></span>
+					</a>
+				</div>
+			</div>
+			<div class="works__box works__box-3">
+				<div class="works__box-content">
+					<p class="works__box-title">hair dresser</p>
+					<p class="works__box-category">Branding</p>
+					<a href="" class="works__button">
+						<span class="works__button-text">view</span>
+						<span class="works__button-icon"><img src="src/img/grid-arrow.png" alt=""></span>
+					</a>
+				</div>
+			</div>
+			<div class="works__box works__box-4">
+				<div class="works__box-content">
+					<p class="works__box-title">hair dresser</p>
+					<p class="works__box-category">Branding</p>
+					<a href="" class="works__button"><span class="works__button-text">view</span>
+						<span class="works__button-icon"><img src="src/img/grid-arrow.png" alt=""></span>
+					</a>
+				</div>
+			</div>
+			<div class="works__box works__box-5">
+				<div class="works__box-content">
+					<p class="works__box-title">hair dresser</p>
+					<p class="works__box-category">Branding</p>
+					<a href="" class="works__button">
+						<span class="works__button-text">view</span>
+						<span class="works__button-icon"><img src="src/img/grid-arrow.png" alt=""></span>
+					</a>
+				</div>
+			</div>
+			<div class="works__box works__box-6">
+				<div class="works__box-content">
+					<p class="works__box-title">hair dresser</p>
+					<p class="works__box-category">Branding</p>
+					<a href="" class="works__button"><span class="works__button-text">view</span><span
+							class="works__button-icon"><img src="src/img/grid-arrow.png" alt=""></span></a>
+				</div>
+			</div>
+			<div class="works__box works__box-7">
+				<div class="works__box-content">
+					<p class="works__box-title">hair dresser</p>
+					<p class="works__box-category">Branding</p>
+					<a href="" class="works__button"><span class="works__button-text">view</span><span
+							class="works__button-icon" <img src="src/img/grid-arrow.png" alt="">></span></a>
+				</div>
+			</div>
+			<div class="works__box works__box-8">
+				<div class="works__box-content">
+					<p class="works__box-title">hair dresser</p>
+					<p class="works__box-category">Branding</p>
+					<a href="" class="works__button"><span class="works__button-text">view</span><span
+							class="works__button-icon"><img src="src/img/grid-arrow.png" alt=""></span></a>
+				</div>
+			</div>
+			<div class="works__box works__box-9">
+				<div class="works__box-content">
+					<p class="works__box-title">hair dresser</p>
+					<p class="works__box-category">Branding</p>
+					<a href="" class="works__button"><span class="works__button-text">view</span><span
+							class="works__button-icon"><img src="src/img/grid-arrow.png" alt=""></span></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="talking" id="talking">
+		<p class="talking__text">Do you like OUR WORK so far? <br> Let's talk about YOUR PROJECT!</p>
+		<a href="" class="talking__btn">Get in Touch</a>
+	</div>
+	<div class="blog" id="blog">
+		<h2 class="blog__title">Recent blog posts</h2>
+		<h3 class="blog__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+		<div class="blog__note blog__note-1">
+			<img src="src/img/blog-1.png" alt="" class="blog__img">
+			<div class="blog__text-box">
+				<div class="blog__note-box">
+					<div class="blog__date">
+						<p class="blog__date-num">18</p>
+						<p class="blog__date-mon">oct</p>
+					</div>
+					<div class="blog__note-title-box">
+						<div class="blog__note-title">Startup ideas needs to be funded </div>
+						<div class="blog__note-author">By Khalil Uddin in Development </div>
+					</div>
+				</div>
+
+				<p class="blog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aspernatur natus laborum
+					odio. Eum iste iusto mollitia quasi laborum accusamus recusandae incidunt vel animi repellendus
+					necessitatibus molestias magnam facere aspernatur ex omnis debitis, vitae voluptates voluptas provident
+					non ipsam quas nihil quisquam. Cumque debitis incidunt impedit placeat, adipisci distinctio excepturi.
+				</p>
+				<a href="" class="blog__link">Read more</a>
+			</div>
+		</div>
+		<div class="blog__note blog__note-2">
+			<img src="src/img/blog-2.png" alt="" class="blog__img">
+			<div class="blog__text-box">
+				<div class="blog__note-box">
+					<div class="blog__date">
+						<p class="blog__date-num">18</p>
+						<p class="blog__date-mon">oct</p>
+					</div>
+					<div class="blog__note-title-box">
+						<div class="blog__note-title">User Interface Designing Elements </div>
+						<div class="blog__note-author">By Khalil Uddin in Development </div>
+					</div>
+				</div>
+
+				<p class="blog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aspernatur natus laborum
+					odio. Eum iste iusto mollitia quasi laborum accusamus recusandae incidunt vel animi repellendus
+					necessitatibus molestias magnam facere aspernatur ex omnis debitis, vitae voluptates voluptas provident
+					non ipsam quas nihil quisquam. Cumque debitis incidunt impedit placeat, adipisci distinctio excepturi.
+				</p>
+				<a href="" class="blog__link">Read more</a>
+			</div>
+		</div>
+	</div>
+	<div class="testimonials" id="testimonials">
+		<div class="testimonials__content">
+			<div class="testimonials__sponsor-box">
+				<img src="src/img/sponsor-1.png" alt="" class="testimonials__sponsor">
+				<img src="src/img/sponsor-2.png" alt="" class="testimonials__sponsor">
+				<img src="src/img/sponsor-3.png" alt="" class="testimonials__sponsor">
+				<img src="src/img/sponsor-4.png" alt="" class="testimonials__sponsor">
+				<img src="src/img/sponsor-5.png" alt="" class="testimonials__sponsor">
+			</div>
+
+			<div class="testimonials__wrapper">
+
+				<button class="testimonials__btn_prev">
+					<img src="src/img/left-arrow-1.svg" alt="">
+				</button>
+
+				<div class="testimonials__slider_container">
+					<div class="testimonials__slider_track">
+
+						<div class="testimonials__slider_item testimonials__slider_item-1">
+							<div class="testimonials__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa
+								ipsum, Lorem ipsum dolor sit amet. us!</div>
+							<div class="testimonials__author">John Doe, Google Inc.</div>
+						</div>
+						<div class="testimonials__slider_item testimonials__slider_item-2">
+							<div class="testimonials__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Consectetur, eaque!
+								aliquid nemo soluta corrupti culpa eos aperiam nam repellendus!</div>
+							<div class="testimonials__author">Denis Kholin</div>
+						</div>
+						<div class="testimonials__slider_item testimonials__slider_item-3">
+							<div class="testimonials__text">Lorem i
+								aliquid nemo soluta corrupti culpa eos aperiam nam repellendus!</div>
+							<div class="testimonials__author">Alexandr x</div>
+						</div>
+
+					</div>
+				</div>
+
+				<button class="testimonials__btn_next">
+					<img src="src/img/right-arrow-1.svg" alt="">
+				</button>
+			</div>
+
+
+
+
+		</div>
+		<div class="contact" id="contact">
+			<h2 class="contact__title">Get in touch</h2>
+			<h3 class="contact__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+			<div class="contact__block">
+				<div class="contact__info">
+					<div class="contact__adress">
+						<div class="contact__title-box">
+							<div class="contact__adress-icon"><img src="src/img/map.png" alt=""></div>
+							<div class="contact__adress-title">Address</div>
+						</div>
+
+						<div class="contact__adress-text">312, 7th Ave, New York <br> NY 101200, United States of America
+						</div>
+					</div>
+					<div class="contact__phone">
+						<div class="contact__title-box">
+							<div class="contact__phone-icon"><img src="src/img/phone.png" alt=""></div>
+							<div class="contact__phone-title">Hotline (24x7)</div>
+						</div>
+
+						<div class="contact__phone-text">+65 0052 300, +65 88251 210 <br>+88 01723 511 340 </div>
+					</div>
+					<div class="contact__mail">
+						<div class="contact__title-box">
+							<div class="contact__mail-icon"><img src="src/img/mail.png" alt=""></div>
+							<div class="contact__mail-title">E-mail</div>
+						</div>
+
+						<div class="contact__mail-text">shapedtheme@gmail.com <br> khalilkode@gmail.com </div>
+					</div>
+				</div>
+				<form action="" class="contact__form">
+					<input type="text" placeholder="Your name" class="contact__input">
+					<input type="email" placeholder="Your e-mail" class="contact__input">
+					<input type="text" placeholder="Your subject" class="contact__input">
+					<input type="text" placeholder="company name" class="contact__input">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Write your message"
+						class="contact__textarea"></textarea>
+					<div class="contact__submit-box">
+						<input type="submit" value="send message" class="contact__submit">
+						<label for="" class="contact__label"> <span class="contact__label contact__label_red">* </span>We’ll
+							contact
+							you as as
+							possible. We don’t reply on Monday.</label>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+		<footer class="footer" id="footer">
+			<div class="footer__block">
+				<div class="footer__social-network-block">
+					<img src="src/img/twitter.png" alt="" class="footer__social-network">
+					<img src="src/img/twitter.png" alt="" class="footer__social-network">
+					<img src="src/img/twitter.png" alt="" class="footer__social-network">
+					<img src="src/img/twitter.png" alt="" class="footer__social-network">
+				</div>
+			</div>
+
+			<p class="footer__subtitle">© 2015 Startup, Designed by ShapedTheme</p>
+		</footer>
+
+
+
+		<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<script src="src/js/script.js"></script>
+</body>
+
+</html>

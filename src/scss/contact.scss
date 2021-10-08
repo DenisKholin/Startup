@@ -1,0 +1,182 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.contact {
+	max-width: 114rem;
+	margin: 0 auto;
+	padding: 10rem 0;
+
+	@media screen and (max-width: $big-size) {
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+	&__subtitle {
+		margin-bottom: 7rem;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: $medium-size) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__info {
+		width: 20%;
+		display: flex;
+		flex-direction: column;
+		color: $main-color;
+
+		@media screen and (max-width: $medium-size) {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+	&__adress,
+	&__phone,
+	&__mail {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3rem;
+	}
+
+	&__title-box {
+		display: flex;
+		margin-bottom: 1.5rem;
+		font-size: 1.4rem;
+		font-family: Montserrat;
+		font-stretch: normal;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		@media screen and (max-width: $medium-size) {
+			justify-content: center;
+		}
+	}
+
+	&__adress-icon,
+	&__phone-icon,
+	&__mail-icon {
+		margin-right: 1.5rem;
+	}
+
+	&__adress-text,
+	&__phone-text,
+	&__mail-text {
+		font-size: 1.2rem;
+		font-family: Roboto Slab;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2rem;
+		margin-left: 2.5rem;
+
+		@media screen and (max-width: $medium-size) {
+			text-align: center;
+		}
+	}
+
+	&__form {
+		width: 70%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		color: $main-color;
+
+		@media screen and (max-width: $medium-size) {
+			width: 100%;
+		}
+	}
+
+	&__input {
+		width: 47%;
+		height: 4.5rem;
+		font-size: 1.2rem;
+		font-family: Roboto Slab;
+		font-style: normal;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding-left: 1.5rem;
+
+		@media screen and (max-width: $medium-size) {
+			margin-bottom: 2rem;
+		}
+
+		@media screen and (max-width: $small-size) {
+			width: 100%;
+		}
+
+		&:focus {
+			outline: 0.1rem solid #c0301c;
+			border: 0;
+		}
+	}
+
+	&__textarea {
+		width: 100%;
+		height: 10rem;
+		resize: none;
+		font-size: 1.2rem;
+		font-family: Roboto Slab;
+		font-style: normal;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 1.5rem 0 0 1.5rem;
+
+		@media screen and (max-width: $medium-size) {
+			margin-bottom: 2rem;
+		}
+
+		&:focus {
+			outline: 0.1rem solid #c0301c;
+			border: 0;
+		}
+	}
+
+	&__submit-box {
+		display: flex;
+		align-items: center;
+	}
+
+	&__submit {
+		width: 17rem;
+		height: 4.5rem;
+		font-size: 1.2rem;
+		font-family: Roboto Slab;
+		font-style: normal;
+		font-weight: 400;
+		text-transform: uppercase;
+		background-color: transparent;
+		border: 0.1rem solid $main-color;
+		color: $main-color;
+		margin-right: 3.5rem;
+		cursor: pointer;
+		transition: 0.2s;
+
+		&:focus {
+			outline: 0.1rem solid #c0301c;
+			border: 0;
+		}
+
+		&:hover,
+		&:active {
+			border: 0.1rem solid #c0301c;
+			color: #c0301c;
+		}
+	}
+
+	&__label {
+		font-size: 1.2rem;
+		font-family: Roboto Slab;
+		font-style: normal;
+		font-weight: 400;
+
+		&_red {
+			color: #c0301c;
+		}
+	}
+}

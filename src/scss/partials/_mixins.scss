@@ -1,0 +1,10 @@
+@mixin title-line {
+	&::after {
+		content: "";
+		display: block;
+		height: 0.2rem;
+		width: 5rem;
+		background-color: $main-color;
+		margin: 2.5rem auto;
+	}
+}

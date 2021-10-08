@@ -1,0 +1,102 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.about {
+	background-color: $about-bgcolor;
+	padding: 10rem 0;
+	color: $main-color;
+
+	&__content {
+		max-width: 114rem;
+		margin: 0 auto;
+
+		@media screen and (max-width: $big-size) {
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 7rem;
+	}
+
+	&__text-box {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 7rem;
+
+		@media screen and (max-width: $big-size) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__text {
+		font-size: 1.4rem;
+		font-family: Roboto Slab;
+		font-stretch: normal;
+		font-weight: 400;
+		max-width: 55.5rem;
+
+		@media screen and (max-width: $big-size) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__slider {
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: $big-size) {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&-block {
+			width: 49%;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__slider-box {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	&__img {
+		transition: 0.5s;
+		max-width: 26.3rem;
+		max-height: 25rem;
+
+		@media screen and (max-width: $big-size) {
+			width: 90%;
+			height: 90%;
+		}
+	}
+
+	&__img:hover {
+		filter: brightness(50%);
+	}
+
+	&__name {
+		font-size: 1.4rem;
+		font-family: Montserrat;
+		font-stretch: normal;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 2rem 0 1.5rem;
+	}
+
+	&__post {
+		font-size: 1.3rem;
+		font-family: Roboto Slab;
+		font-stretch: normal;
+		font-weight: 400;
+		margin-bottom: 2rem;
+	}
+}

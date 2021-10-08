@@ -1,0 +1,212 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(src/img/header_bg.png);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+	color: $header-color;
+
+	&__content {
+		max-width: 114rem;
+		margin: 0 auto;
+
+		@media screen and (max-width: $big-size) {
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+	}
+
+	&__nav {
+		width: 100%;
+		height: 6.6rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		&_sticky {
+			position: fixed;
+			color: #000;
+			width: 100%;
+			height: 7rem;
+			display: none;
+			transition: 0.5s;
+			justify-content: center;
+			align-items: center;
+			left: 0;
+			top: 0;
+			background-color: #fff;
+			box-shadow: 0px 0px 15px rgb(77, 77, 77);
+			z-index: 101;
+
+			@media screen and (max-width: $big-size) {
+				padding-left: 1%;
+				padding-right: 1%;
+			}
+		}
+
+		&-link:visited,
+		&-link:link {
+			color: $header-color;
+		}
+
+		&-link_sticky:visited,
+		&-link_sticky:link {
+			color: #000;
+		}
+
+		&-item,
+		&-item_sticky {
+			font-size: 1.4rem;
+			font-family: Montserrat;
+			font-stretch: normal;
+			font-weight: 400;
+			transition: 0.2s;
+
+			&:hover,
+			&:active {
+				color: rgb(153, 153, 153);
+			}
+		}
+	}
+
+	&__main-nav,
+	&__main-nav_sticky {
+		width: 54.6rem;
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: $small-size) {
+			display: none;
+		}
+	}
+
+	&__main-nav_sticky {
+		margin-left: 10rem;
+	}
+
+	&__logo,
+	&__logo_sticky {
+		font-size: 2.4rem;
+		font-family: Montserrat;
+		font-stretch: normal;
+		font-weight: 700;
+	}
+
+	&__logo {
+		@media screen and (max-width: $small-size) {
+			display: none;
+		}
+	}
+
+	&__title-box {
+		width: 100%;
+		height: 50rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 30rem;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-size: 5rem;
+		font-family: Montserrat;
+		font-stretch: normal;
+		font-weight: 700;
+
+		@media screen and (max-width: $small-size) {
+			font-size: 3rem;
+		}
+	}
+
+	&__subtitle {
+		font-size: 2rem;
+		font-family: Roboto Slab;
+		font-stretch: normal;
+		font-weight: 400;
+	}
+
+	&__start-btn {
+		color: $header-color;
+		text-transform: uppercase;
+		font-size: 1.6rem;
+		font-family: Montserrat;
+		font-stretch: normal;
+		font-weight: 400;
+		border: 0.2rem solid $header-color;
+		padding: 1.5rem 3rem;
+		transition: 0.3s;
+
+		&:visited,
+		&:link {
+			color: $header-color;
+		}
+
+		&:hover,
+		&:active {
+			// background-color: transparent;
+			background-color: $header-color;
+			color: #490909;
+		}
+	}
+
+	&__burger {
+		width: 3rem;
+		position: fixed;
+		right: 2rem;
+		top: 2rem;
+		cursor: pointer;
+		z-index: 110;
+		display: none;
+
+		@media screen and (max-width: $small-size) {
+			display: block;
+		}
+	}
+}
+
+.popup__nav {
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	background-color: #fff;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	display: none;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+
+	&_main {
+		height: 50rem;
+		font-size: 2.4rem;
+		font-weight: 500;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 10rem;
+	}
+
+	&_item {
+		font-size: 1.8rem;
+		font-family: Montserrat;
+		font-stretch: normal;
+		font-weight: 400;
+		transition: 0.2s;
+		color: #000;
+
+		&:hover,
+		&:active {
+			color: rgb(153, 153, 153);
+		}
+	}
+}
